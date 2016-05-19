@@ -353,7 +353,7 @@ isakmp_info_recv_n(iph1, notify, msgid, encrypted)
 	case ISAKMP_NTYPE_INITIAL_CONTACT:
 		if (encrypted)
 			info_recv_initialcontact(iph1);
-			return 0;
+		return 0;
 		break;
 #ifdef ENABLE_DPD
 	case ISAKMP_NTYPE_R_U_THERE:
